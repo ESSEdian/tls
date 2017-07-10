@@ -1,4 +1,5 @@
 #!/bin/bash
+yum install expect -y
 echo "清空文件"
 rm -rf pem
 mkdir pem
