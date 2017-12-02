@@ -2,7 +2,7 @@
 DOMAIN_HOST=`ifconfig eth0 | grep "inet" | awk '{ print $2}' | sed -n '1p;1q'`
 #DOMAIN_HOST=`hostname` #选择域名方案最好
 HOST=$DOMAIN_HOST
-PASSWORD="yourPassword"
+PASSWORD=`cat password.txt`
 COUNTRY=CN
 PROVINCE=gd
 CITY=gz
