@@ -34,9 +34,9 @@ echo extendedKeyUsage = clientAuth > /tmp/extfile.cnf
 openssl x509 -passin pass:$PASSWORD -req -days 365 -sha256 -in pem/client.csr -CA pem/ca.pem -CAkey pem/ca-key.pem -CAcreateserial -out pem/client-cert.pem -extfile /tmp/extfile.cnf
 #============================================================================================
 # 清理文件
-rm -rf pem/ca-key.pem
-rm -rf pem/{server,client}.csr
-rm -rf pem/ca.srl
+#rm -rf pem/ca-key.pem
+#rm -rf pem/{server,client}.csr
+#rm -rf pem/ca.srl
 # 最终文件
 # ca.pem  ==  CA机构证书
 # client-cert.pem  ==  客户端证书
